@@ -8,18 +8,14 @@ Funcionalidade: Acessar conta
     @happy
     Cenário: Login
         Dado que acesso a página de login
-        Quando submeto o meu login com:
-            | email | badroanosobanol@gmail.com |
-            | senha | 12345                     |
+        Quando submeto o meu login com: "badroanosobanol@gmail.com" e "12345"
         Então devo ser redirecionado para a área logada
 
 
     Esquema do Cenário: Tentativa de login
 
         Dado que acesso a página de login
-        Quando submeto o meu login com:
-            | email | <email> |
-            | senha | <senha> |
+        Quando submeto o meu login com: "<email>" e "<senha>"
         Então devo ver a mensagem: "<mensagem_saida>"
 
         Exemplos:

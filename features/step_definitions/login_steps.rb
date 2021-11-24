@@ -1,18 +1,13 @@
 Dado('que acesso a página de login') do
-    visit "/"
-    click_link "Log in to your customer account"
-   
+    goto_login
 end
   
-Quando('submeto o meu login com:') do |table|
-    user = table.rows_hash
 
-    find("input[id=email]").set user[:email]
-    find("input[id=passwd]").set user[:senha]
-    click_button "SubmitLogin"
-    
+Quando('submeto o meu login com: {string} e {string}') do |email, senha|
+    login_whith(email, senha)
 end
   
+
 Então('devo ser redirecionado para a área logada') do
     expect(page). to have_css "body[id='my-account']"
 
