@@ -1,5 +1,5 @@
 Dado('que acesso a página de cadastro') do
-    visit "http://automationpractice.com/index.php"
+    visit "/"
     click_on "Sign in"
    
 end

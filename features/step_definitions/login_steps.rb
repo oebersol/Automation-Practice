@@ -1,5 +1,5 @@
 Dado('que acesso a página de login') do
-    visit "http://automationpractice.com/index.php"
+    visit "/"
     click_link "Log in to your customer account"
    
 end
@@ -24,12 +24,6 @@ Então('devo ver a mensagem: {string}') do |expect_message|
     expect(message.text).to have_content expect_message
 
 end
-
-
-
-
-
-
 
 
 # usuário cadastrado no site:
