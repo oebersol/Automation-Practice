@@ -15,7 +15,7 @@ Cenário: Cadastro.
         |endereco    |Rua dos Bergamota, 1010   |
         |universidade|IFRG                      |
         |profissao   |Técnico de futebol        |
-        |idade       |125                       |
+        |idade       |125                       | 
     Então devo ser redirecionado para a área logada
 
 Cenário: Email não informado.

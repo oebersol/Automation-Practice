@@ -11,7 +11,7 @@ Funcionalidade: Acessar conta
         Quando submeto o meu login com: "badroanosobanol@gmail.com" e "12345"
         Então devo ser redirecionado para a área logada
 
-
+    @sad
     Esquema do Cenário: Tentativa de login
 
         Dado que acesso a página de login

@@ -13,7 +13,7 @@ Quando('submeto o meu cadastro com:') do |table|
   find('input[id=customer_firstname]').set user[:nome]
   find('input[id=customer_lastname]').set user[:ultimo_nome]
   find('input[id=passwd]').set user[:senha]
-  find('#uniform-days').set value = '2'
+  find('#uniform-days').set = '2'
 
   sleep 5
 end
