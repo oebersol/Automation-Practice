@@ -1,3 +1,4 @@
+@login
 Dado('que acesso a página de login') do
   @login = LoginPage.new
   @login.go
